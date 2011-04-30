@@ -1,0 +1,41 @@
+Overview.
+----------------------------------------
+
+  SLCLJ is the Superior Lisp Interaction Mode for Emacs. It is
+  implemented in two main parts: the Emacs Lisp side (slclj.el), and
+  the support library for the Common Lisp (swank.lisp and swank-*.lisp)
+
+  For a real description, see the manual in doc/
+
+Quick setup instructions
+------------------------
+
+  Add this to your ~/.emacs file and fill in the appropriate filenames:
+
+    (add-to-list 'load-path "~/hacking/lisp/slclj/")  ; your SLCLJ directory
+    (setq inferior-lisp-program "/opt/sbcl/bin/sbcl") ; your Lisp system
+    (require 'slclj)
+    (slclj-setup)
+
+  Make sure your `inferior-lisp-program' is set to a compatible
+  version of Lisp.
+
+  Use `M-x' slclj to fire up and connect to an inferior Lisp.
+  SLCLJ will now automatically be available in your Lisp source
+  buffers.
+
+Licence.
+----------------------------------------
+
+  SLCLJ is free software. All files, unless explicitly stated
+  otherwise, are public domain.
+
+Contact.
+----------------------------------------
+
+  Questions and comments are best directed to the mailing list:
+    http://common-lisp.net/mailman/listinfo/slclj-devel
+
+  The mailing list archive is also available on Gmane:
+    http://news.gmane.org/gmane.lisp.slclj.devel
+
