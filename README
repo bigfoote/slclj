@@ -1,3 +1,14 @@
+SLCLJ is a fork of SLIME from August 4, 2010, which worked with
+Clojure, where every instance of the term slime has been replaced with
+SLCLJ to enable the two to exist in your emacs setup simultaneously
+and without fear of further SLIME development breaking functionality
+with Clojure.  Follow the directions at
+https://github.com/technomancy/swank-clojure to set up a swank server
+for Clojure, set up emacs to work with SLCLJ much like how you would
+for SLIME, and then connect using
+
+M-x slclj-connect
+
 Overview.
 ----------------------------------------
 
